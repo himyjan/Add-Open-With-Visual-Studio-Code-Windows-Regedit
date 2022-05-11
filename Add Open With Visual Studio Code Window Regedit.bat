@@ -33,23 +33,23 @@ rem add it for all file types
 @reg add "HKEY_CLASSES_ROOT\*\shell\AndroidStudio"         /t REG_EXPAND_SZ /v "" /d "Open with Android Studio"   /f
 @reg add "HKEY_CLASSES_ROOT\*\shell\AndroidStudio"         /t REG_EXPAND_SZ /v "Icon" /d "%as2Path%" /f
 @reg add "HKEY_CLASSES_ROOT\*\shell\AndroidStudio\command" /t REG_EXPAND_SZ /v "" /d "%as2Path% \"%%1\"" /f
-@reg add "HKEY_CLASSES_ROOT\*\shell\SublimeText"         /t REG_SZ /v "" /d "Open with Sublime Text"   /f
+@reg add "HKEY_CLASSES_ROOT\*\shell\SublimeText"         /t REG_EXPAND_SZ /v "" /d "Open with Sublime Text"   /f
 @reg add "HKEY_CLASSES_ROOT\*\shell\SublimeText"         /t REG_EXPAND_SZ /v "Icon" /d "%st2Path%" /f
-@reg add "HKEY_CLASSES_ROOT\*\shell\SublimeText\command" /t REG_SZ /v "" /d "%st2Path% \"%%1\"" /f
+@reg add "HKEY_CLASSES_ROOT\*\shell\SublimeText\command" /t REG_EXPAND_SZ /v "" /d "%st2Path% \"%%1\"" /f
 
 rem add it for folders
-@reg add "HKEY_CLASSES_ROOT\Directory\shell\VSCode"         /t REG_SZ /v "" /d "Open with Code"   /f
+@reg add "HKEY_CLASSES_ROOT\Directory\shell\VSCode"         /t REG_EXPAND_SZ /v "" /d "Open with Code"   /f
 @reg add "HKEY_CLASSES_ROOT\Directory\shell\VSCode"         /t REG_EXPAND_SZ /v "Icon" /d "%vsc2Path%" /f
-@reg add "HKEY_CLASSES_ROOT\Directory\shell\VSCode\command" /t REG_SZ /v "" /d "%vsc2Path% \"%%1\"" /f
-@reg add "HKEY_CLASSES_ROOT\Directory\shell\VS"         /t REG_SZ /v "" /d "Open with Visual Studio"   /f
+@reg add "HKEY_CLASSES_ROOT\Directory\shell\VSCode\command" /t REG_EXPAND_SZ /v "" /d "%vsc2Path% \"%%1\"" /f
+@reg add "HKEY_CLASSES_ROOT\Directory\shell\VS"         /t REG_EXPAND_SZ /v "" /d "Open with Visual Studio"   /f
 @reg add "HKEY_CLASSES_ROOT\Directory\shell\VS"         /t REG_EXPAND_SZ /v "Icon" /d "%vs2Path%" /f
-@reg add "HKEY_CLASSES_ROOT\Directory\shell\VS\command" /t REG_SZ /v "" /d "%vs2Path% \"%%1\"" /f
-@reg add "HKEY_CLASSES_ROOT\Directory\shell\AndroidStudio"         /t REG_SZ /v "" /d "Open with Android Studio"   /f
+@reg add "HKEY_CLASSES_ROOT\Directory\shell\VS\command" /t REG_EXPAND_SZ /v "" /d "%vs2Path% \"%%1\"" /f
+@reg add "HKEY_CLASSES_ROOT\Directory\shell\AndroidStudio"         /t REG_EXPAND_SZ /v "" /d "Open with Android Studio"   /f
 @reg add "HKEY_CLASSES_ROOT\Directory\shell\AndroidStudio"         /t REG_EXPAND_SZ /v "Icon" /d "%as2Path%" /f
-@reg add "HKEY_CLASSES_ROOT\Directory\shell\AndroidStudio\command" /t REG_SZ /v "" /d "%as2Path% \"%%1\"" /f
-@reg add "HKEY_CLASSES_ROOT\Directory\shell\SublimeText"         /t REG_SZ /v "" /d "Open with Sublime Text"   /f
+@reg add "HKEY_CLASSES_ROOT\Directory\shell\AndroidStudio\command" /t REG_EXPAND_SZ /v "" /d "%as2Path% \"%%1\"" /f
+@reg add "HKEY_CLASSES_ROOT\Directory\shell\SublimeText"         /t REG_EXPAND_SZ /v "" /d "Open with Sublime Text"   /f
 @reg add "HKEY_CLASSES_ROOT\Directory\shell\SublimeText"         /t REG_EXPAND_SZ /v "Icon" /d "%st2Path%" /f
-@reg add "HKEY_CLASSES_ROOT\Directory\shell\SublimeText\command" /t REG_SZ /v "" /d "%st2Path% \"%%1\"" /f
+@reg add "HKEY_CLASSES_ROOT\Directory\shell\SublimeText\command" /t REG_EXPAND_SZ /v "" /d "%st2Path% \"%%1\"" /f
 
 echo.
 echo...Script Complete....
